@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="107631" started-at="2014-06-17T18:37:06Z" finished-at="2014-06-17T18:38:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="107631" started-at="2014-06-17T18:37:06Z" finished-at="2014-06-17T18:38:54Z">
+      <class name="homework.test.AddVideoTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="beforeTest" is-config="true" duration-ms="11714" started-at="2014-06-17T11:37:06Z" finished-at="2014-06-17T11:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="beforeMethod" is-config="true" duration-ms="11323" started-at="2014-06-17T11:37:18Z" finished-at="2014-06-17T11:37:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="uploadConfirmed()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="uploadConfirmed" duration-ms="84027" started-at="2014-06-17T11:37:29Z" finished-at="2014-06-17T11:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadConfirmed -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-17T11:38:53Z" finished-at="2014-06-17T11:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="afterTest" is-config="true" duration-ms="551" started-at="2014-06-17T11:38:53Z" finished-at="2014-06-17T11:38:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- homework.test.AddVideoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
