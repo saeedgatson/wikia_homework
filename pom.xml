@@ -39,10 +39,17 @@
   					<encoding>UTF-8</encoding> 
 				</configuration>
 			</plugin>
+			
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.10</version>
+				<configuration>
+					<systemPropertyVariables>
+						<browser>firefox</browser>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
 		</plugins>
 	</pluginManagement>
   </build>
-  <properties>
-  	<browser>firefox</browser>
-  </properties>
 </project>

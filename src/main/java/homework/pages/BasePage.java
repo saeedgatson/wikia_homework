@@ -1,6 +1,5 @@
 package homework.pages;
 
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -11,7 +10,6 @@ public class BasePage {
 	
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
-		this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		this.actions = new Actions(this.driver);
 	}
 	
