@@ -45,7 +45,7 @@
 				<version>2.10</version>
 				<configuration>
 					<systemPropertyVariables>
-						<browser>firefox</browser>
+						<TestProps.browser>${TestProps.browser}</TestProps.browser>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
@@ -58,4 +58,7 @@
         </resource>
 	</resources>
   </build>
+  <properties>
+  	<TestProps.browser>firefox</TestProps.browser>
+  </properties>
 </project>

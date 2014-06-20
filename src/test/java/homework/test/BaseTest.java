@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest {
-  private String browser = "firefox";
+  private String browser;
   private String pathToDriver;
   private String baseURL = "http://testhomework.wikia.com/";
   protected WebDriver driver = null;
