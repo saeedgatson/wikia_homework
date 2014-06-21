@@ -55,8 +55,21 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 
+# Misc
+
+.DS_Store
+
 # TestNG
 test-output/
-
-# Misc
-.DS_Store
+test-output/Default suite/Default test.xml
+test-output/emailable-report.html
+test-output/index.html
+test-output/old/Default suite/classes.html
+test-output/old/Default suite/methods-alphabetical.html
+test-output/old/Default suite/methods.html
+test-output/old/Default suite/testng.xml.html
+test-output/old/Default suite/toc.html
+test-output/old/index.html
+test-output/testng-results.xml
+test-output/Default suite/Default test.html
+test-output/junitreports/TEST-homework.test.HomePageTest.xml

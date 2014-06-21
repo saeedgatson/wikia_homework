@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="107631" started-at="2014-06-17T18:37:06Z" finished-at="2014-06-17T18:38:54Z">
+  <suite name="Default suite" duration-ms="44154" started-at="2014-06-21T02:14:53Z" finished-at="2014-06-21T02:15:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="107631" started-at="2014-06-17T18:37:06Z" finished-at="2014-06-17T18:38:54Z">
-      <class name="homework.test.AddVideoTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="beforeTest" is-config="true" duration-ms="11714" started-at="2014-06-17T11:37:06Z" finished-at="2014-06-17T11:37:18Z">
+    <test name="Default test" duration-ms="44154" started-at="2014-06-21T02:14:53Z" finished-at="2014-06-21T02:15:37Z">
+      <class name="homework.test.HomePageTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="beforeTest" is-config="true" duration-ms="42342" started-at="2014-06-20T19:14:53Z" finished-at="2014-06-20T19:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="beforeMethod" is-config="true" duration-ms="11323" started-at="2014-06-17T11:37:18Z" finished-at="2014-06-17T11:37:29Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="beforeMethod" is-config="true" duration-ms="31" started-at="2014-06-20T19:15:36Z" finished-at="2014-06-20T19:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uploadConfirmed()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="uploadConfirmed" duration-ms="84027" started-at="2014-06-17T11:37:29Z" finished-at="2014-06-17T11:38:53Z">
+        <test-method status="PASS" signature="clickContributeExpandsDropdown()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="clickContributeExpandsDropdown" duration-ms="633" started-at="2014-06-20T19:15:36Z" finished-at="2014-06-20T19:15:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadConfirmed -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-17T11:38:53Z" finished-at="2014-06-17T11:38:53Z">
+        </test-method> <!-- clickContributeExpandsDropdown -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-20T19:15:36Z" finished-at="2014-06-20T19:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:homework.test.AddVideoTest@3e0bbd1b]" name="afterTest" is-config="true" duration-ms="551" started-at="2014-06-17T11:38:53Z" finished-at="2014-06-17T11:38:54Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2014-06-20T19:15:36Z" finished-at="2014-06-20T19:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginFormDispalyed()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="loginFormDispalyed" duration-ms="154" started-at="2014-06-20T19:15:36Z" finished-at="2014-06-20T19:15:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFormDispalyed -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2014-06-20T19:15:37Z" finished-at="2014-06-20T19:15:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2014-06-20T19:15:37Z" finished-at="2014-06-20T19:15:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="redirectedToHomeUrl()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="redirectedToHomeUrl" duration-ms="7" started-at="2014-06-20T19:15:37Z" finished-at="2014-06-20T19:15:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectedToHomeUrl -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2014-06-20T19:15:37Z" finished-at="2014-06-20T19:15:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:homework.test.HomePageTest@3d3e58d4]" name="afterTest" is-config="true" duration-ms="911" started-at="2014-06-20T19:15:37Z" finished-at="2014-06-20T19:15:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- homework.test.AddVideoTest -->
+      </class> <!-- homework.test.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
