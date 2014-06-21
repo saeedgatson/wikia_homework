@@ -16,4 +16,8 @@ public class BasePage {
 	public void hoverOver(WebElement element) {
 		actions.moveToElement(element).build().perform();
 	}
+	
+	public String getTitle() {
+		return driver.getTitle();
+	}
 }

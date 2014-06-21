@@ -30,7 +30,7 @@ public class HomePageTest extends BaseTest {
   }
   
   @Test
-  public void loginFormDispalyed() {
+  public void loginFormDisplayed() {
 	  homePage.hoverOver(homePage.loginLink);
 	  Assert.assertTrue(homePage.userLoginDiv.isDisplayed(), "User Login Div Isn't Displayed");
   }
@@ -39,6 +39,11 @@ public class HomePageTest extends BaseTest {
   public void clickContributeExpandsDropdown() {
 	  homePage.contributeButton.click();
 	  Assert.assertTrue(homePage.contributeButton.isDisplayed());
+  }
+  
+  @Test
+  public void correctTitleDisplayed() {
+	  Assert.assertEquals(homePage.getTitle(), "Test-homework Wiki");
   }
   
   @AfterMethod
