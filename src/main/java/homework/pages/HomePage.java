@@ -25,6 +25,12 @@ public class HomePage extends BasePage {
 	@FindBy(linkText = "Add a Video")
 	public WebElement addVideoLink;
 	
+	@FindBy(id = "UserLoginDropdown")
+	public WebElement userLoginDiv;
+	
+	@FindBy(css = "#WikiHeader > div.buttons > nav > ul")
+	public WebElement contributeUl;
+	
 	public HomePage(WebDriver driver) {
 		super(driver);
 	}
