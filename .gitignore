@@ -73,3 +73,17 @@ test-output/old/index.html
 test-output/testng-results.xml
 test-output/Default suite/Default test.html
 test-output/junitreports/TEST-homework.test.HomePageTest.xml
+test-output/Default suite/Default test.html
+test-output/Default suite/Default test.xml
+test-output/Default suite/testng-failed.xml
+test-output/emailable-report.html
+test-output/index.html
+test-output/junitreports/TEST-homework.test.LoginTest.xml
+test-output/old/Default suite/methods-alphabetical.html
+test-output/old/Default suite/methods-not-run.html
+test-output/old/Default suite/methods.html
+test-output/old/Default suite/testng.xml.html
+test-output/old/Default suite/toc.html
+test-output/old/index.html
+test-output/testng-failed.xml
+test-output/testng-results.xml
