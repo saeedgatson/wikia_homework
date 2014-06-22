@@ -16,13 +16,13 @@ public class SpecialUserLoginPage extends BasePage{
 	@FindBy(name = "keeploggedin")
 	public WebElement keepLoggedInCheckbox;
 	
-	@FindBy(css = ".WikiaArticle > .input-group.login-button.big > input")
+	@FindBy(css = "#mw-content-text > div > form > fieldset > div.input-group.login-button.big > input")
 	public WebElement loginButton;
 	
-	@FindBy(css = ".WikiaArticle > .input-group.error.required > div")
+	@FindBy(css = "#mw-content-text > div > form > fieldset > div.input-group.error.required > div")
 	public WebElement userNameErrorDiv;
 	
-	@FindBy(css = ".WikiaArticle > .input-group.password-input.error.required > div")
+	@FindBy(css = "#mw-content-text > div > form > fieldset > div.input-group.password-input.error.required > div")
 	public WebElement passwordErrorDiv;
 	
 	public SpecialUserLoginPage(WebDriver driver) {
