@@ -3,7 +3,6 @@ package homework.test;
 import homework.pages.HomePage;
 import homework.pages.VideoAddPage;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -26,7 +25,7 @@ public class AddVideoTest extends BaseTest{
 	
 	@BeforeMethod
 	public void beforeMethod() {
-		homePage = PageFactory.initElements(driver, HomePage.class);
+		homePage = new HomePage(driver);
 		
 		String userName = "nostag";
 		String password = "wikia1234";

@@ -33,6 +33,7 @@ public class HomePage extends BasePage {
 	
 	public HomePage(WebDriver driver) {
 		super(driver);
+		PageFactory.initElements(driver, this);
 	}
 	
 	public void login(String userName, String password) {
@@ -45,6 +46,6 @@ public class HomePage extends BasePage {
 	public VideoAddPage clickAddVideo() {
 		contributeButton.click();
 		addVideoLink.click();
-		return PageFactory.initElements(driver, VideoAddPage.class);
+		return new VideoAddPage(driver);
 	}
 }
