@@ -31,4 +31,17 @@ public class LoginTest extends BaseTest {
 		String errorMessage = "Hm, we don't recognize this name. Don't forget usernames are case sensitive.";
 		Assert.assertEquals(specialUserLoginPage.userNameErrorDiv.getText(), errorMessage);
 	}
+	
+	@Test
+	public void errorWhenInvalidePasswordGiven() {
+		homePage = new HomePage(driver);
+		String userName = "nostag";
+		String password = "wikia1234Fail";
+		
+		homePage.login(userName, password);
+		SpecialUserLoginPage specialUserLoginPage = new SpecialUserLoginPage(driver);
+		
+		String errorMessage = "Oops, wrong password. Make sure caps lock is off and try again";
+		Assert.assertEquals(specialUserLoginPage.passwordErrorDiv.getText(), errorMessage);
+	}
 }
