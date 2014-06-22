@@ -1,8 +1,8 @@
 package homework.test;
 
 import homework.pages.HomePage;
+import homework.pages.SpecialUserLoginPage;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest {
 	
 	@BeforeMethod
 	public void beforeMethod() {
-		homePage = PageFactory.initElements(driver, HomePage.class);
+		homePage = new HomePage(driver);
 	}
 
 	@Test
@@ -26,6 +26,18 @@ public class LoginTest extends BaseTest {
 		
 		homePage.login(userName, password);
 		Assert.assertEquals(homePage.loginLink.getText().toLowerCase(), userName);
+	}
+	
+	@Test
+	public void errorWhenInvalideUserNameGiven() {
+		String userName = "nostagFail";
+		String password = "wikia1234";
+		
+		homePage.login(userName, password);
+		SpecialUserLoginPage specialUserLoginPage = new SpecialUserLoginPage(driver);
+		
+		String errorMessage = "Hm, we don't recognize this name. Don't forget usernames are case sensitive.";
+		Assert.assertEquals(specialUserLoginPage.userNameErrorDiv.getText(), errorMessage);
 	}
 	
 	@AfterTest
