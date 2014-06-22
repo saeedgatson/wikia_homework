@@ -4,23 +4,9 @@ import homework.pages.HomePage;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.AfterTest;
 
 public class HomePageTest extends BaseTest {
   private HomePage homePage;
-  
-  @BeforeTest
-  public void beforeTest() {
-	  super.beforeTest(); 
-  }
-  
-  @BeforeMethod
-  public void beforeMethod() {
-	  homePage = new HomePage(driver);
-  }
   
   @Test
   public void redirectedToHomeUrl() {
@@ -30,27 +16,21 @@ public class HomePageTest extends BaseTest {
   
   @Test
   public void loginFormDisplayed() {
+	  homePage = new HomePage(driver);
 	  homePage.hoverOver(homePage.loginLink);
 	  Assert.assertTrue(homePage.userLoginDiv.isDisplayed(), "User Login Div Isn't Displayed");
   }
   
   @Test
   public void clickContributeExpandsDropdown() {
+	  homePage = new HomePage(driver);
 	  homePage.contributeButton.click();
 	  Assert.assertTrue(homePage.contributeButton.isDisplayed());
   }
   
   @Test
   public void correctTitleDisplayed() {
+	  homePage = new HomePage(driver);
 	  Assert.assertEquals(homePage.getTitle(), "Test-homework Wiki");
-  }
-  
-  @AfterMethod
-  public void afterMethod() {
-  }
-
-  @AfterTest
-  public void afterTest() {
-	  super.afterTest();
   }
 }

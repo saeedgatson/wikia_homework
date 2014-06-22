@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
   private String browser;
@@ -14,12 +16,14 @@ public class BaseTest {
   private String baseURL = "http://testhomework.wikia.com/";
   protected WebDriver driver = null;
   
-  public void beforeTest() {
+  @BeforeMethod(alwaysRun = true)
+  public void beforeMethod() {
 	  driver = getWebDriver();
 	  driver.get(baseURL);
   }
 
-  public void afterTest() {
+  @AfterMethod(alwaysRun = true)
+  public void afterMethod() {
 	  driver.quit();
   }
   

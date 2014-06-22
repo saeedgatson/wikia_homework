@@ -8,19 +8,10 @@ import org.testng.annotations.*;
 
 public class LoginTest extends BaseTest {
 	private HomePage homePage;
-	
-	@BeforeTest
-	public void beforeTest() {
-		super.beforeTest();
-	}
-	
-	@BeforeMethod
-	public void beforeMethod() {
-		homePage = new HomePage(driver);
-	}
 
 	@Test
 	public void loggedInUsernameShown() {
+		homePage = new HomePage(driver);
 		String userName = "nostag";
 		String password = "wikia1234";
 		
@@ -30,6 +21,7 @@ public class LoginTest extends BaseTest {
 	
 	@Test
 	public void errorWhenInvalideUserNameGiven() {
+		homePage = new HomePage(driver);
 		String userName = "nostagFail";
 		String password = "wikia1234";
 		
@@ -38,10 +30,5 @@ public class LoginTest extends BaseTest {
 		
 		String errorMessage = "Hm, we don't recognize this name. Don't forget usernames are case sensitive.";
 		Assert.assertEquals(specialUserLoginPage.userNameErrorDiv.getText(), errorMessage);
-	}
-	
-	@AfterTest
-	public void afterTest() {
-		super.afterTest();
 	}
 }
