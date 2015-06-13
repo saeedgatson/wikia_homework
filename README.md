@@ -1,5 +1,7 @@
-WikiaHomework
+Wikia Homework
 ==============
+
+*This code was quickly written in my spare time as part of the [Wikia][1] interview process*
 
 Test written in Java using Selenium 2, TestNG, & Maven as part of the Wikia homework
 
@@ -12,7 +14,7 @@ You can run the test from the command line by following these steps:
 3. run ‘mvn compile’
 4. run ‘mvn test’
 
-The calls can also be made in one line like this: 'mvn clean install'
+The calls can also be made in one line like this: `mvn clean install`
 
 Run test in Chrome from command line by doing the following:
 
@@ -21,4 +23,6 @@ Run test in Chrome from command line by doing the following:
 3. run 'mvn compile'
 4. run 'mvn test -DTestProps.browser=chrome'
 
-The one line call is: 'mvn clean install -DTestProps.browser=chrome'
+The one line call is: `mvn clean install -DTestProps.browser=chrome`
+
+[1]: http://www.wikia.com/About
